@@ -1,4 +1,4 @@
-# FileSystem-Demo-Using-Java-Design-Pattern
+# FileSystem-Demo-Using-Java-Composite-Entity-Design-Pattern
 Here we're just implementing a demo file system using java composite entity design pattern. 
 Feel free to use.
 In a hierarchical file system, there are different drives, folders and files. 
