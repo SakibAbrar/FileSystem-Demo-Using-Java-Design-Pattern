@@ -93,9 +93,15 @@ public class Folder implements Node {
 
     @Override
     public void addNode(Node node){
-        nodeList.add(node);
-        System.out.println(node.getName() + " " + node.getType() + " " + "created in " + node.getParent().getDirectory());
-        component_count++;
+        if("drive".equalsIgnoreCase(node.getType())){
+            System.out.println("You can't add drive inside a folder!Try adding files and folders instead!");
+        }
+
+        else{
+            nodeList.add(node);
+            System.out.println(node.getName() + " " + node.getType() + " " + "created in " + node.getParent().getDirectory());
+            component_count++;
+        }
     }
 
     public void removeNode(Node node){

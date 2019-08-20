@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Client client1 = new Client();
-        client1.loadUI();
+        Client client = new Client();
+        client.loadUI();
     }
 }
